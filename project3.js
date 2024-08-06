@@ -20,7 +20,7 @@ form.addEventListener('submit', (e) => {
     }
     else {
         const bmi = (weight / ((height * height) / 10000)).toFixed(2)
-        result.innerHTML = `<span>${bmi}</span>`;
+        result.innerHTML = `<span style='color:white'>${bmi}</span>`;
 
         if (bmi < 18.4) {
             result2.innerHTML = `<br><span style='color:red'>You are underweight</span>`
