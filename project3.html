@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* overflow: hidden; */
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #212121;
+            color: #fff;
+
+        }
+
+        .conatiner {
+            padding: 20px;
+            border: 2px solid aqua;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        h1,
+        h2 {
+            margin-bottom: 2em;
+        }
+
+        input {
+            margin: 20px;
+        }
+
+        .btn {
+
+
+            /* margin: 10px; */
+            height: 20vh;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            padding: 6px;
+            /* width: 10vw; */
+            background-color: aqua;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: aliceblue;
+        }
+
+        .guide {
+
+            /* border: 2px solid red; */
+            text-align: center;
+            margin: 3em;
+            padding: 20px;
+        }
+
+        /* .container
+         {
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <h1>BMI CALCULATOR</h1>
+        <form id="MyForm">
+            <label> Height in CM :</label>
+            <input type="text" id="height" /><br>
+            <label> Weight in KG :</label>
+            <input type="text" id="Weight" /><br>
+            <div class="btn">
+                <button>SUBMIT</button>
+            </div>
+            <div id="result"></div>
+            <div id="result2"></div>
+            
+            <div class="guide">
+                <h2>BMI WEIGHT GUIDE</h2>
+                <p>
+                    Under Weight :- &lt 18.4 <br>
+                    Normal :- 18.5 to 24.9 <br>
+                    OverWeight :-25 to 29.9 <br>
+                    obese :- > 30.0
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="project3.js"></script>
+
+</html>
