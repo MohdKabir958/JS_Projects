@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            /* border: 2px solid red; */
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row {
+            padding: 9px 30px;
+            /* margin:5px; */
+        }
+
+        .btn {
+            margin: 5px;
+            font-size: 1.5em;
+            text-align: center;
+            /* border: 2px solid black; */
+            border-radius: 5px;
+            width: 45px;
+             background-color: grey;
+            /* color: #fff;  */
+        }
+
+        .calci {
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: rgb(69, 68, 68);
+            padding:5px;
+        }
+
+        .special {
+            /* background-color: black; */
+            width: 51px;
+        }
+
+        .input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+
+        }
+
+        #number {
+            width: 18vw;
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 15px;
+            text-align: right;
+            height:1em;
+            font-size: 1.5em;
+            /* border: none; */
+            /* border-bottom: 2px solid black; */
+        }
+        .orange{
+            background-color: orange;
+        }
+        .lytgrey{
+            background-color: rgb(203, 196, 196);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calci">
+            <div class="input">
+                <input type="text" name="number" id="number" placeholder="Let's Calculate">
+            </div>
+            <div class="row">
+                <button class="btn special lytgrey">AC</button>
+                <button class="btn lytgrey">%</button>
+                <button class="btn lytgrey">x</button>
+                <button class="btn orange">/</button>
+            </div>
+
+            <div class="row">
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn orange">*</button>
+            </div>
+
+            <div class="row">
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn orange">-</button>
+            </div>
+
+            <div class="row">
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn orange">+</button>
+            </div>
+
+            <div class="row">
+                <button class="btn">00</button>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button class="btn orange">=</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="project1.js"></script>
+</body>
+
+</html>

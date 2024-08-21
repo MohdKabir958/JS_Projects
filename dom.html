@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="lngs">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(langName) {
+        const li = document.createElement('li');
+        li.innerHTML = langName;
+        document.querySelector('ul').appendChild(li)
+    }
+    addlanguage("python")
+    addlanguage("typescript")
+
+
+    //edit
+    const secondlang=
+document.querySelector("li:nth-child(2)")
+console.log(secondlang)
+const newli=document.createElement('li')
+newli.textContent="mojo"
+secondlang.replaceWith(newli)
+
+//edit ex 2
+
+const firstlang=document.querySelector("li:first-child")
+const newlang=document.createElement('li')
+newlang.textContent='golang'
+firstlang.replaceWith(newlang)
+
+const thirdlang=document.querySelector("li:nth-child(3)")
+thirdlang.outerHTML='<li>HTML</li>'
+
+
+//remove child
+
+const rem=document.querySelector('li:last-child')
+rem.remove()
+</script>
+
+</html>
